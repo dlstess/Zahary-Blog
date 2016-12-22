@@ -14,9 +14,26 @@ namespace Blog.Models
         [StringLength(50)]
         public string Title { get; set; }
 
+<<<<<<< HEAD
         public string Content { get; set; }
 
         [Required]
         public string AuthorId { get; set; }
+=======
+        [Required]
+        public string Content { get; set; }
+
+        public string AuthorId { get; set; }
+
+        [Required]
+        [Display(Name = "Category")]
+        public int CategoryId { get; set; }
+
+        //public ICollection<Category> Categories { get; set; }
+
+        public List<Category> Categories { get; set; }
+
+        public string Tags { get; set; }
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
     }
 }

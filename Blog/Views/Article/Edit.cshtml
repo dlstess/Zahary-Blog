@@ -1,6 +1,10 @@
 ﻿@model Blog.Models.ArticleViewModel
 
+<<<<<<< HEAD
 @{
+=======
+@{ 
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
     ViewBag.Title = "Edit";
 }
 
@@ -16,9 +20,15 @@
             @Html.HiddenFor(m => m.AuthorId)
 
             <div class="form-group">
+<<<<<<< HEAD
                 @Html.LabelFor(m => m.Title, new { @class = "control-label col-sm-4" })
                 <div class="col-sm-4">
                     @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+=======
+                @Html.LabelFor(m => m.Title, new { @class = "control-label col-sm-4"})
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Title, new { @class = "form-control"})
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
                 </div>
             </div>
 
@@ -30,6 +40,26 @@
             </div>
 
             <div class="form-group">
+<<<<<<< HEAD
+=======
+                @Html.LabelFor(m => m.CategoryId, new { @class = "control-label col-sm-4" })
+                <div class="dropdown col-sm-4">
+                    @Html.DropDownListFor(m => m.CategoryId,
+                        new SelectList(Model.Categories, "Id", "Name", Model.CategoryId),
+                        new { @class = "btn btn-info col-sm-12" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Tags, new { @class = "control-label col-sm-4" })
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(m => m.Tags, new { @class = "form-control col-sm-4" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
                 <div class="col-sm-4 col-sm-offset-4">
                     @Html.ActionLink("Cancel", "Index", "Article", null, new { @class = "btn btn-default" })
                     <input type="submit" value="Edit" class="btn btn-success" />
@@ -37,4 +67,8 @@
             </div>
         }
     </div>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e

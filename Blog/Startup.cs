@@ -11,9 +11,13 @@ namespace Blog
     {
         public void Configuration(IAppBuilder app)
         {
+<<<<<<< HEAD
             Database.SetInitializer(
                 new MigrateDatabaseToLatestVersion<BlogDbContext, Configuration>());
 
+=======
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<BlogDbContext, Configuration>());
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
             ConfigureAuth(app);
         }
     }

@@ -6,9 +6,17 @@
 <div class="container">
     <div class="well">
         <h2>@ViewBag.Title</h2>
+<<<<<<< HEAD
         @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
         {
             @Html.AntiForgeryToken()
+=======
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
             @Html.ValidationSummary("", new { @class = "text-danger" })
             <div class="form-group">
                 @Html.LabelFor(m => m.Email, new { @class = "col-sm-4 control-label" })
@@ -40,9 +48,18 @@
                 </div>
             </div>
         }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
     </div>
 </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e

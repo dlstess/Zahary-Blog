@@ -71,7 +71,11 @@ namespace Blog.Models
 
         [Required]
         [StringLength(50)]
+<<<<<<< HEAD
         [Display(Name = "Full Name")]
+=======
+        [Display(Name ="Full Name")]
+>>>>>>> bb2f3aa44f68db192bd45cb5288d83367e83e90e
         public string FullName { get; set; }
 
         [Required]
